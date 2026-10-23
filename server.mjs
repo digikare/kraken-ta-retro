@@ -268,6 +268,28 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  const icons = {
+    '/favicon.ico': ['digikare-favicon.ico', 'image/x-icon'],
+    '/digikare-favicon.ico': ['digikare-favicon.ico', 'image/x-icon'],
+    '/digikare-favicon.svg': ['digikare-favicon.svg', 'image/svg+xml'],
+    '/digikare-icon-32.png': ['digikare-icon-32.png', 'image/png'],
+    '/digikare-icon-48.png': ['digikare-icon-48.png', 'image/png'],
+    '/digikare-icon-180.png': ['digikare-icon-180.png', 'image/png'],
+    '/digikare-icon-192.png': ['digikare-icon-192.png', 'image/png'],
+  };
+  if (Object.hasOwn(icons, p)) {
+    const [filename, contentType] = icons[p];
+    try {
+      const icon = fs.readFileSync(path.join(__dirname, 'public', filename));
+      res.writeHead(200, { 'Content-Type': contentType });
+      res.end(icon);
+    } catch {
+      res.writeHead(404);
+      res.end();
+    }
+    return;
+  }
+
   if (p === '/flux') {
     const code = (u.searchParams.get('code') || '').toUpperCase();
     if (!code) { res.writeHead(400); res.end(); return; }
