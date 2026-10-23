@@ -70,7 +70,7 @@ KRAKEN. Le clin d’œil me plaisait. J’espère qu’il lui plaît aussi.
 Un serveur Node.js, une page web et une aide IA facultative pour regrouper
 les notes en thèmes. Parce qu’à la main, c’est quand même un peu chiant.
 
-Pour montrer ce que ça donne, on a aussi de quoi faire. Johan, dans l’équipe,
+Pour montrer ce que ça donne, on a aussi de quoi faire. Johan Pujol, dans l’équipe,
 a travaillé sur un skill de création vidéo. On s’en sert pour présenter
 KRAKEN, sans y passer des jours. Ça facilite aussi le passage du petit outil
 interne à quelque chose qu’on peut partager.
