@@ -6,6 +6,8 @@ des votes et un plan d’action.
 Construit chez Digikare pour nos quatre rétrospectives annuelles.
 [Pourquoi KRAKEN](HISTORY.md).
 
+[Voir la vidéo de présentation (MP4)](https://github.com/digikare/kraken-ta-retro/releases/download/v0.1.0/kraken-ta-retro-promo-16x9.mp4)
+
 ## Démarrer
 
 Node.js 24 ou supérieur. Aucune dépendance à installer.
