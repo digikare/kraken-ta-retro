@@ -1,0 +1,16 @@
+# Secrets locaux (seul le modèle sans secret est publiable)
+.env
+.env.*
+!.env.example
+
+# Archives locales
+/99_Archives/
+
+# Vidéos promotionnelles générées
+/videos/
+
+# Données de sessions et dépendances locales
+/data/
+node_modules/
+.venv/
+.DS_Store

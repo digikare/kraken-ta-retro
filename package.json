@@ -1,0 +1,16 @@
+{
+  "name": "kraken-ta-retro",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Application de rétrospective d’équipe collaborative avec suggestions IA optionnelles.",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.mjs",
+    "dev": "node --watch --env-file-if-exists=.env server.mjs",
+    "check": "node --check server.mjs"
+  }
+}
